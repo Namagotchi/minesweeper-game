@@ -1,5 +1,5 @@
 # minesweeper-game
-some minesweeper game i made horribly
+some minesweeper game i made horribly for a school assignment
 
 made in html, css, and javascript
 
