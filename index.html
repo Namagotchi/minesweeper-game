@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Name: Nam Le,
+     Email: nam7@my.yorku.ca,
+     Student Number: 216448490 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Minesweeper</title>
+<link rel="stylesheet" href="style.css"></link>
+<script type="text/javascript" src="minesweeper.js"></script>
+</head>
+<body>
+
+<h1 id="headTitle">Minesweeper</h1>
+
+<div>
+    <select id="difficulty" onchange="setDifficulty();">
+       <option value="0">Novice</option>
+       <option value="1">Intermediate</option>
+       <option value="2">Advanced</option>
+    </select>
+
+<br>
+    <div id= "startButtons">
+    <button  id= "gameStart">Start Timer</button>
+  </div>
+  <div id= "countUp"></div>
+
+  <br>
+  <button type="submit" id="resetButton" onClick="refreshPage()">Reset!</button>
+
+<br>
+  <div id="smiley" class="smiley" onmousedown="smileyDown();" onmouseup="smileyUp();"" onclick="changeSmiley();"></div>
+<div class="bottomText">
+<div class="minefield"></div>
+<div>Flags Remaining: Only <span id='remainingFlags'></span></div>
+<div id="result"></div>
+</div>
+
+</body>
+</html>
